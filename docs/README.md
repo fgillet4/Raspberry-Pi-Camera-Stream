@@ -39,6 +39,34 @@ Before starting, ensure you have the following:
     ```
 3. Navigate to "Interfacing Options" > "Camera" and enable the camera.
 
+## Installing dependencies Automatically
+Execution Permission: To execute this script, you might need to set the execution permission:
+```bash
+chmod +x install_dependencies.sh
+```
+Running the Script: To run the script, use the command:
+
+```bash
+./install_dependencies.sh
+```
+
+Customizations: Customize this script based on the specific dependencies and versions required by your project.
+InfluxDB Installation: The script includes a placeholder for installing InfluxDB. You should replace this with the actual commands necessary for your specific InfluxDB setup.
+Python Packages: The script installs Flask, PiCamera, and the InfluxDB client for Python. You can add or remove packages based on your project's requirements.
+
+```bash 
+chmod +x setup_database.sh
+```
+Running the Script: Execute the script with:
+
+```bash
+./setup_database.sh
+```
+Customizing the Script: Modify this script based on your actual database setup, especially if you're using a different database system or a different version of InfluxDB.
+Installation Commands: The script currently has placeholders for InfluxDB installation and setup. These should be replaced with the actual commands necessary for your specific InfluxDB setup.
+Security: Be cautious with sensitive information like database tokens. Ensure that this script is securely stored, especially if your project is in a public repository.
+This script provides a basic template for setting up InfluxDB and may need adjustments depending on your specific database setup and the environment in which your project is being deployed.
+
 ## Setting Up the Flask Server
 
 1. Install Flask on your Raspberry Pi:

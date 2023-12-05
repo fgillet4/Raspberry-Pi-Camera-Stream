@@ -1,0 +1,20 @@
+{
+    "flask": {
+        "host": "0.0.0.0",
+        "port": 5000,
+        "debug": true
+    },
+    "camera": {
+        "resolution": {
+            "width": 640,
+            "height": 480
+        },
+        "framerate": 24
+    },
+    "database": {
+        "url": "http://localhost:8086",
+        "token": "Your_InfluxDB_Token",
+        "org": "Your_Organization",
+        "bucket": "Your_Bucket"
+    }
+}

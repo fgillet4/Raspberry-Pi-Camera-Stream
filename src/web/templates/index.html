@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Camera Stream</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Raspberry Pi Pressure Gauge Monitor</h1>
+    </header>
+
+    <div class="main-content">
+        <div class="video-container">
+            <!-- The src attribute should be the endpoint of your video stream -->
+            <img src="/video_feed" class="camera-stream" alt="Camera Stream">
+        </div>
+
+        <div class="form-pressure">
+            <form action="/submit_reading" method="post">
+                <label for="pressureReading">Enter Pressure Reading:</label>
+                <input type="text" id="pressureReading" name="pressureReading" class="input-field" placeholder="Pressure in PSI" required>
+
+                <button type="submit" class="button">Submit Reading</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Pressure Gauge Monitoring System</p>
+    </footer>
+</body>
+</html>
