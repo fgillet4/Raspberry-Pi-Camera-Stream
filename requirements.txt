@@ -1,4 +1,4 @@
-pip install picamera flask
+pip install picamera
 pip install influxdb-client
 pip install Flask
 pip install python-dotenv
